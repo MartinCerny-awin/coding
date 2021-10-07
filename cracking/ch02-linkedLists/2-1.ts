@@ -1,4 +1,4 @@
-// O(N^2) TIME --- O(1) SPACE
+// O(N) TIME --- O(N) SPACE
 export function removeDuplicates(linkedList: any) {
   if (!linkedList) return linkedList;
 
