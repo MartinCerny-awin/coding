@@ -1,4 +1,6 @@
-export function removeMiddleNode(node: any) {
+import { LinkedListNode } from './helpers';
+
+export function removeMiddleNode(node: LinkedListNode) {
   if (!node || !node.next) {
     return node;
   }

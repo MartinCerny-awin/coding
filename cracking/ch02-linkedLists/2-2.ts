@@ -1,5 +1,7 @@
+import { LinkedListNode } from './helpers';
+
 // My bad solution, better to first iterate over kth so we do not have to iterate twice
-export function returnKthToLast(linkedList: any, kth: number) {
+export function returnKthToLast(linkedList: LinkedListNode, kth: number) {
   if (!linkedList) return linkedList;
 
   let node = linkedList;
@@ -31,7 +33,7 @@ export function returnKthToLast(linkedList: any, kth: number) {
   return node.value;
 }
 
-export function returnKthToLast1(linkedList: any, kth: number) {
+export function returnKthToLast1(linkedList: LinkedListNode, kth: number) {
   if (!linkedList) return linkedList;
 
   let node = linkedList;

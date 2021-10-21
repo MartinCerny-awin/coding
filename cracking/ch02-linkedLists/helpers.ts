@@ -1,4 +1,4 @@
-export function arrayToLinkedList(arr: Array<any>) {
+export function arrayToLinkedList(arr: Array<any>): LinkedListNode {
   if (arr.length === 0) {
     return null;
   }
@@ -11,7 +11,7 @@ export function arrayToLinkedList(arr: Array<any>) {
   return list;
 }
 
-export function linkedListToArray(linkedList: Node) {
+export function linkedListToArray(linkedList: LinkedListNode) {
   const arr = new Array();
   let node = linkedList;
 
@@ -23,12 +23,12 @@ export function linkedListToArray(linkedList: Node) {
   return arr;
 }
 
-type Node = {
+export type LinkedListNode = {
   value: any;
-  next: Node;
+  next: LinkedListNode;
 };
 
-export function createNode(value: any, next: Node): Node {
+export function createNode(value: any, next: LinkedListNode): LinkedListNode {
   return {
     value,
     next: next || null,

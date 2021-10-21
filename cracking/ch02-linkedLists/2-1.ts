@@ -1,5 +1,7 @@
+import { LinkedListNode } from './helpers';
+
 // O(N) TIME --- O(N) SPACE
-export function removeDuplicates(linkedList: any) {
+export function removeDuplicates(linkedList: LinkedListNode) {
   if (!linkedList) return linkedList;
 
   let set = new Set();
